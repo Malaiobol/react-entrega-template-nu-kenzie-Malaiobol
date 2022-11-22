@@ -9,7 +9,7 @@ export function TotalValue({ values }) {
     .reduce((accumulator, { amount }) => accumulator + Number(amount), 0);
   const totalBalance =
     positiveValues > negativeValues || positiveValues === 0
-      ? positiveValues + negativeValues
+      ? positiveValues - negativeValues
       : `Seu saldo está negativado em ${positiveValues + negativeValues} reais`;
 
   return (
