@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.m-auto {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 40px;
+}
+
+.block {
+  display: block;
+}
+
+.grid {
+  display: grid;
+}
+
+.web_title {
+  color: transparent;
+  background: linear-gradient(90deg, #fd377e 10.84%, #ffffff 19.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink_button {
+  color: #fff;
+  background-color: #fd377e;
+  border: solid 2px #fd377e;
+
+  width: 250px;
+  border-radius: 8px;
+  padding: 13px 20px;
+
+  font-size: 16px;
+}
+
+.pink_button:hover {
+  cursor: pointer;
+
+  background-color: #e064cc;
+  border: solid 2px #e064cc;
+}
+
+.gray_button {
+  background-color: #e9ecef;
+  color: #343a40;
+
+  border: solid 2px #e9ecef;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.gray_button:hover {
+  cursor: pointer;
+
+  background-color: #343a40;
+  border: solid 2px #343a40;
+  color: #e9ecef;
+}

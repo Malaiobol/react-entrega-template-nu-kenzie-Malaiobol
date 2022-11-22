@@ -1,0 +1,45 @@
+body {
+  background-color: #212529;
+}
+
+.main-container {
+  margin: auto;
+  justify-content: center;
+  margin: auto;
+}
+
+.left-container {
+  margin-top: 8%;
+  margin-right: 10%;
+  width: 350px;
+  height: 280px;
+}
+
+.img-container {
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 30%;
+  height: 30%;
+}
+
+.web_slogan {
+  margin-top: 30px;
+
+  color: #fff;
+
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.mini_slogan {
+  margin-top: 30px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+button {
+  margin-top: 30px;
+}
