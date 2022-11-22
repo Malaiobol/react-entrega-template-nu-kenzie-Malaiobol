@@ -4,7 +4,7 @@ import "./index.css";
 export function NewValue({ addNewValue }) {
   const [isValue, setNewValue] = useState({
     title: "",
-    amount: "",
+    amount: Number,
     type: "entrada",
   });
 
@@ -12,7 +12,7 @@ export function NewValue({ addNewValue }) {
     event.preventDefault();
     setNewValue({
       title: "",
-      amount: "",
+      amount: Number,
       type: "entrada",
     });
     addNewValue(isValue);
@@ -20,7 +20,7 @@ export function NewValue({ addNewValue }) {
 
   return (
     <form className="new-value-container" onSubmit={createNewValue}>
-      <div className="separator">
+      <div className="separator header_container">
         <p className="input_name">Descrição</p>
         <input
           type="text"
@@ -35,21 +35,25 @@ export function NewValue({ addNewValue }) {
           Ex: Compra de roupas
         </label>
       </div>
-      <div className="buttons-container">
-        <div className="separator">
-          <label htmlFor="">Valor</label>
+      <div className="inputs-container">
+        <div className="value-container">
+          <label htmlFor="amount">Valor</label>
           <input
+            name="amount"
             type="number"
             value={isValue.amount}
             required
+            className="amount_input"
+            placeholder="1"
             onChange={(event) =>
               setNewValue({ ...isValue, amount: event.target.value })
             }
           />
         </div>
-        <div className="separator">
+        <div className="type-container">
           <label htmlFor="">Tipo de valor</label>
           <select
+            className="type_value"
             onChange={(event) =>
               setNewValue({ ...isValue, type: event.target.value })
             }>
@@ -57,10 +61,10 @@ export function NewValue({ addNewValue }) {
             <option value="saida">Saída</option>
           </select>
         </div>
-        <button className="pink_button" type="submit">
-          Inserir valor
-        </button>
       </div>
+      <button className="pink_button" type="submit">
+        Inserir valor
+      </button>
     </form>
   );
 }

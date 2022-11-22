@@ -1,10 +1,50 @@
 .list {
+  width: 540px;
+  height: 90px;
+  border: solid 1px #f8f9fa;
+  border-radius: 4px;
+
+  padding: 8px 13px 11px 14px;
+
+  justify-content: space-between;
+
+  margin-bottom: 32px;
 }
+
 .list-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #aabaca;
 }
+
 .list-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #868e9a;
 }
+
+.separator_delete {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .list-value {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 20px;
+
+  color: #868e9a;
 }
 .detele_value_button {
+  width: 22px;
+  height: 22px;
+  background-color: #868e9a;
+  border-radius: 4px;
+}
+
+.detele_value_button:hover {
+  cursor: pointer;
 }

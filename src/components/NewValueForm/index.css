@@ -1,0 +1,105 @@
+.new-value-container {
+  width: 365px;
+  height: 350px;
+  border: solid 1px #77626df5;
+  border-radius: 4px;
+  background-color: #343a40;
+  padding: 38px 25px;
+}
+
+.header_container {
+  display: inline-grid;
+}
+
+.input_name {
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #aeb5bd;
+}
+
+.valueDescritpion {
+  width: 315px;
+  height: 52px;
+  border: solid 1px #f8f9fa;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 0px 16px;
+}
+
+.value_description_label {
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #868e96;
+}
+
+.inputs-container {
+  margin-top: 30px;
+  width: 315px;
+  display: flex;
+  height: 80px;
+}
+
+.inputs-container > div {
+  display: inline-grid;
+}
+
+.value-container {
+  width: 105px;
+  height: 80px;
+  margin-right: 30px;
+}
+
+.value-container,
+.type-container {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+
+  color: #868e96;
+}
+
+.amount_input {
+  width: 130px;
+  height: 45px;
+  border: solid 2px #f8f9fa;
+  border-radius: 8px;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.amount_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.amount_input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #aeb5bd;
+}
+
+.type-container {
+  width: 125px;
+  height: 80px;
+  margin-left: 65px;
+}
+
+.type_value {
+  width: 150px;
+  height: 50px;
+  justify-content: space-between;
+  border: solid 2px #f8f9fa;
+  border-radius: 8px;
+  padding: 0px 16px;
+}
+
+.type_value > option {
+  color: #868e96;
+}
+
+.pink_button {
+  margin-top: 70px;
+  margin-left: 15%;
+}

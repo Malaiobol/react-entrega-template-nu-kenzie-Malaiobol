@@ -2,9 +2,21 @@ import { useState } from "react";
 import { DefaultHeader } from "../Header";
 import { NewValue } from "../NewValueForm";
 import { ValueList } from "../ValueList";
+import { TotalValue } from "../TotalValue";
 
 export function StartedHome({ setLogin }) {
-  const [values, setValue] = useState([]);
+  const [values, setValue] = useState([
+    {
+      title: "batata",
+      amount: 3405,
+      type: "saida",
+    },
+    {
+      title: "batata2",
+      amount: 34055,
+      type: "entrada",
+    },
+  ]);
   const [filter, setFilter] = useState("todos");
 
   const filteredValues = values.filter((value) =>
@@ -24,7 +36,10 @@ export function StartedHome({ setLogin }) {
     <>
       <DefaultHeader setLogin={setLogin} />
       <div className="flex">
-        <NewValue addNewValue={addNewValue} />
+        <div className="separator-containers">
+          <NewValue addNewValue={addNewValue} />
+          <TotalValue values={values} />
+        </div>
         <ValueList
           valueList={filteredValues}
           removeValue={removeValue}

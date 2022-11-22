@@ -1,0 +1,36 @@
+.total-value-container {
+  width: 375px;
+  height: 100px;
+  border: solid 1px #77626df5;
+  border-radius: 4px;
+  background-color: #343a40;
+  padding: 24px 20px;
+
+  margin-top: 36px;
+}
+
+.total_value {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+
+  color: #aeb5bd;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+
+  margin-left: 20%;
+
+  color: #fd377e;
+}
+
+.total_value_phrase {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+
+  color: #aeb5bd;
+}

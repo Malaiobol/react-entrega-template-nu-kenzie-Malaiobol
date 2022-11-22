@@ -33,8 +33,8 @@ export function ValueList({ valueList, removeValue, setFilter }) {
             <ValueCard key={index} value={value} removeValue={removeValue} />
           ))
         ) : (
-          <li className="list">
-            <p>Você ainda não tem nenhum lançamento!</p>
+          <li>
+            <p className="warning">Você ainda não tem nenhum lançamento!</p>
           </li>
         )}
       </ul>

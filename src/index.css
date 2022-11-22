@@ -81,3 +81,8 @@ a {
   border: solid 2px #343a40;
   color: #e9ecef;
 }
+
+.separator-containers {
+  margin-top: 90px;
+  margin-left: 16%;
+}
