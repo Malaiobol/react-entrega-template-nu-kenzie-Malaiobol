@@ -10,7 +10,9 @@ export function TotalValue({ values }) {
   const totalBalance =
     positiveValues > negativeValues || positiveValues === 0
       ? positiveValues - negativeValues
-      : `Seu saldo está negativado em ${positiveValues + negativeValues} reais`;
+      : `Seu saldo está negativado em R$${
+          positiveValues + negativeValues
+        } reais`;
 
   return (
     <div className="total-value-container">
